@@ -30,20 +30,20 @@ function Nav(props) {
       </h2>
       <nav>
         <ul className="flex-row">
-          {/* // about  */}
-          <li className={`mx-2 ${currentPage === pages[0] && 'navActive'}`}>
+
+          <li id="nav-items"className={`mx-2 ${currentPage === pages[0] && 'navActive'}`}>
           <a data-testid="about" href="#about" onClick={() => setCurrentPage(pages[0])}>
               About me
             </a>
           </li>
-          {/* // contact */}
-          <li className={`mx-2 ${currentPage === pages[1] && 'navActive'}`}>
+
+          <li id="nav-items"className={`mx-2 ${currentPage === pages[1] && 'navActive'}`}>
             <span onClick={() => setCurrentPage(pages[1])}>
               Contact
             </span>
           </li>
-          {/* // projects */}
-          <li className={`mx-2 ${currentPage === pages[2] && 'navActive'}`}>
+
+          <li id="nav-items"className={`mx-2 ${currentPage === pages[2] && 'navActive'}`}>
             <span onClick={() => setCurrentPage(pages[2])}>
               Projects
             </span>

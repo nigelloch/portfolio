@@ -280,7 +280,7 @@ button {
 	font-size: 16px;
 	font-weight: 600;
 	margin-bottom: 30px;
-	padding: 10px 15px;	
+	padding: 10px 25px;	
 }
 
 a {
@@ -310,6 +310,9 @@ a {
   
 }
 
+#nav-items {
+  color: var(--light)
+}
 #about {
   /* display: inline-block; */
 }
