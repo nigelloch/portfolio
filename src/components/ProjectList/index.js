@@ -4,7 +4,7 @@ import Modal from '../Modal';
 const ProjectList = ({ category }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentPhoto, setCurrentPhoto] = useState();
-
+  const baseUrl = '../../assets/small/projects/'
   const [photos] = useState([
     {
       name: 'Budget Tracker',
@@ -49,7 +49,7 @@ const ProjectList = ({ category }) => {
     setCurrentPhoto({ ...image, index: i });
     setIsModalOpen(!isModalOpen);
   };
-
+  
   return (
     <div>
       {isModalOpen && (
@@ -57,12 +57,13 @@ const ProjectList = ({ category }) => {
       )}
       <div className="flex-row">
         {currentPhotos.map((image, i) => (
+
           <img
-            src={require(`../../assets/small/${category}/${i}.jpg`).default}
+            src={require(baseUrl+i+'.jpg').default}
             alt={image.name}
             className="img-thumbnail mx-1"
             onClick={() => toggleModal(image, i)}
-            key={image.name}
+            id={i}
           />
         ))}
       </div>
