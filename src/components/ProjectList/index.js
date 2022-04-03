@@ -4,7 +4,7 @@ import Modal from '../Modal';
 const ProjectList = ({ category }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentPhoto, setCurrentPhoto] = useState();
-  const baseUrl = '../../assets/small/projects/'
+
   const [photos] = useState([
     {
       name: 'Budget Tracker',
@@ -59,7 +59,7 @@ const ProjectList = ({ category }) => {
         {currentPhotos.map((image, i) => (
 
           <img
-            src={require(baseUrl+i+'.jpg').default}
+            src={require(`../../assets/small/projects/${i}.jpg`).default}
             alt={image.name}
             className="img-thumbnail mx-1"
             onClick={() => toggleModal(image, i)}
