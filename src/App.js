@@ -3,44 +3,24 @@ import Nav from './components/Nav';
 import About from './components/About';
 import Gallery from './components/Gallery';
 import ContactForm from './components/Contact';
+import Resume from './components/Resume';
 import ProjectList from './components/ProjectList';
 
 function App() {
-  // const [categories] = useState([
-  //   {
-  //     name: 'commercial',
-  //     description: 'Photos of grocery stores, food trucks, and other commercial projects',
-  //   },
-  //   { name: 'portraits', description: 'Portraits of people in my life' },
-  //   { name: 'food', description: 'Delicious delicacies' },
-  //   { name: 'landscape', description: 'Fields, farmhouses, waterfalls, and the beauty of nature' },
-  // ]);
-  const [pages] =  useState([<About/>,<ContactForm/>,<Gallery/>])
+ 
+  const [pages] =  useState([<About/>,<Gallery/>,<Resume/>,<ContactForm/>])
   const [currentPage, setCurrentPage] = useState(pages[0])
-  // const [currentCategory, setCurrentCategory] = useState(categories[0]);
-  // const [contactSelected, setContactSelected] = useState(false);
+
 
   return (
     <div>
       <Nav
-        // categories={categories}
-        // setCurrentCategory={setCurrentCategory}
-        // currentCategory={currentCategory}
-        // contactSelected={contactSelected}
-        // setContactSelected={setContactSelected}
+
         pages = {pages}
         setCurrentPage = {setCurrentPage}
         currentPage = {currentPage}
       ></Nav>
       <main>
-          {/* {!contactSelected ? (
-            <>
-              <Gallery currentCategory={currentCategory}></Gallery>
-              <About></About>
-            </>
-          ) : (
-              <ContactForm></ContactForm>
-            )} */}
           {currentPage}
       </main>
     </div>

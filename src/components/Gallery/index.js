@@ -3,15 +3,10 @@ import ProjectList from '../ProjectList';
 import { capitalizeFirstLetter } from '../../utils/helpers';
 
 
-function Gallery(props) {
-  // const { currentCategory } = props.props;
-  // const category = props.props
+function Gallery() {
   const [categories] = useState([
     {
-      name: 'projects', description: 'A collection of my work' },
-    { name: 'portraits', description: 'Portraits of people in my life' },
-    { name: 'food', description: 'Delicious delicacies' },
-    { name: 'landscape', description: 'Fields, farmhouses, waterfalls, and the beauty of nature' },
+      name: 'projects', description: 'A collection of my work' }
   ]);
   return (
     <div>
@@ -28,20 +23,3 @@ function Gallery(props) {
   );
 }
 export default Gallery;
-
-          // {{categories.map((category) => (
-          //   <li
-          //       className={`mx-1 ${
-          //         currentCategory.name === category.name && !contactSelected && `navActive`
-          //         }`}
-          //       key={category.name}
-          //     >
-          //     <span onClick={() => {
-          //         setCurrentCategory(category);
-          //         setContactSelected(false);
-          //       }}
-          //     >
-          //       {capitalizeFirstLetter(category.name)}
-          //     </span>
-          //   </li>
-          // ))}}

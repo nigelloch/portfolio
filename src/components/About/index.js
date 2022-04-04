@@ -7,17 +7,19 @@ function About() {
   return (
     <section className="my-5 about-container"  >
     <div >
-      <h1 id="about">Who am I?</h1>
-      <img src={coverImage} id= "myprofileimage" className="my-2" style={{ height: "auto", width: "50%" }} alt="cover" />
+      <h1 id="about">Who is Nigel?</h1>
+      <img src={coverImage} id= "myprofileimage" className="my-2" style={{ height: "auto", width: "65%" }} alt="cover" />
     </div>
       <div id="about-text" className="my-2">
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum turpis sed ex condimentum molestie. 
-          Mauris condimentum lectus ut ornare dignissim. Mauris faucibus urna mi, ac feugiat metus aliquam maximus. 
-          Proin aliquam justo nec diam vulputate vestibulum. Aenean sollicitudin nulla at nisi ornare, nec suscipit massa eleifend. 
-          Morbi tristique justo vel turpis sollicitudin, et tristique velit convallis. In hac habitasse platea dictumst. Phasellus 
-          mattis nunc sed orci consequat laoreet. Praesent id nisl nibh. Curabitur imperdiet ultricies mollis. In hac habitasse platea dictumst.
-      </p>
+          My name is Nigel Loch. I am a Full Stack Web Developer nearing completion of the Full Stack
+          Coding Bootcamp at The University of Texas. I am also currently employed at ExxonMobil as a Business
+          Analyst with the Geospatial Team. I have a strong background in Database Management, Reporting, and 
+          Software Testing. I enjoy the creative side of development and am one who appreciates clean and elegant
+          code. Please keep checking back on me as I have many projects in the works and will be keeping my project 
+          list up to date! 
+         </p>
+
       </div>
     </section>
   )

@@ -1,5 +1,5 @@
 {
-  "homepage": "http://nigelloch.github.io/photo-port",
+  "homepage": "http://nigelloch.github.io/portfolio",
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
@@ -7,6 +7,7 @@
     "@testing-library/user-event": "^12.8.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-pdf": "^5.7.2",
     "react-scripts": "4.0.3",
     "web-vitals": "^1.1.1"
   },
@@ -29,7 +30,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-    
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^5.16.3",

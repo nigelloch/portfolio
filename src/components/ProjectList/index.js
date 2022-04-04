@@ -57,7 +57,7 @@ const ProjectList = ({ category }) => {
       )}
       <div className="flex-row">
         {currentPhotos.map((image, i) => (
-
+          <div>
           <img
             src={require(`../../assets/small/projects/${i}.jpg`)}
             alt={image.name}
@@ -65,6 +65,7 @@ const ProjectList = ({ category }) => {
             onClick={() => toggleModal(image, i)}
             id={i}
           />
+          </div>
         ))}
       </div>
     </div>
