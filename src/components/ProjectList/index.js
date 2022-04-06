@@ -13,6 +13,12 @@ const ProjectList = ({ category }) => {
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
     },
     {
+      name: 'Employee Tracker',
+      category: 'projects',
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
+    },
+    {
       name: 'Note Taker',
       category: 'projects',
       description:
@@ -35,12 +41,6 @@ const ProjectList = ({ category }) => {
       category: 'projects',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
-    },
-    {
-      name: 'Employee Tracker',
-      category: 'projects',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
     }
   ]);
 
@@ -59,12 +59,13 @@ const ProjectList = ({ category }) => {
         {currentPhotos.map((image, i) => (
           <div>
           <img
-            src={require(`../../assets/small/projects/${i}.jpg`)}
+            src={require(`../../assets/small/projects/${i}.jpg`).default}
             alt={image.name}
             className="img-thumbnail mx-1"
             onClick={() => toggleModal(image, i)}
             id={i}
           />
+          <div> </div>
           </div>
         ))}
       </div>

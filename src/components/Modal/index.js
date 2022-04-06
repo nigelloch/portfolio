@@ -6,10 +6,11 @@ const Modal = ({ onClose, currentPhoto }) => {
   
     return (
       <div className="modalBackdrop">
+        {console.log(currentPhoto)}
         <div className="modalContainer">
           <h3 className="modalTitle">{name}</h3>
           <img 
-          src={require(`../../assets/large/projects/${index}.jpg`)}
+          src={require(`../../assets/large/projects/${index}.jpg`).default}
            alt="current category" />
           <p>{description}</p>
           <button onClick={onClose} type="button">Close this modal</button>
