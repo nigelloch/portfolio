@@ -20,7 +20,9 @@ No installation necessary
 
 ##  Usage
 
-Anyone interested in viewing my Portfolio can do so here:
+Anyone interested in viewing my Portfolio can do so here: <https://nigelloch.github.io/portfolio/>
+
+![alt text](./src/assets/readme/readme.jpg)
 
 ##  Tests
 
