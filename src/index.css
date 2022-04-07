@@ -8,7 +8,7 @@ main {
   --primary: #8c54ff;
   --secondary: #F3A847;
   --tertiary: #B12704;
-  --light: #fafafa;
+  --light: #e6e6e6;
   --dark: #000000;
   --darker: #111111;
   --error: rgb(228, 46, 1);
@@ -239,10 +239,19 @@ textarea {
 }
 
 .img-thumbnail {
-  width: auto;
+  width: 300px;
   height: 300px;
+  object-fit: cover;
   margin-bottom: 50px;
   cursor: pointer;
+  justify-content: space-between;
+  box-shadow: 0 10px 6px -2px gray;
+  transition: transform .2s;
+  -moz-box-shadow: 50px 10px 5px gray;
+}
+
+.img-thumbnail:hover {
+  transform: scale(1.2);
 }
 
 .modalBackdrop {
@@ -257,22 +266,23 @@ textarea {
 }
 
 .modalContainer {
-	background: var(--light);
+	background: rgba(0,0,0,0.5);
 	border-radius: 5px;
 	max-width: 100%;
 	margin: 50px auto;
 	padding: 15px;
-	width: 960px;
+	width: 660px;
 }
 
 .modalTitle {
-	font-size: 18px;
+	font-size: 25px;
 	font-weight: 600;
 	margin-bottom: 25px;
+  color: red;
 }
 
 button {
-	background: var(--primary);
+	background: red;
 	border: 0;
 	border-radius: 5px;
 	color: #fff;
@@ -306,16 +316,47 @@ a {
   flex-basis: 100%;
 }
 
-#myprofileimage {
-  
-}
-
 #nav-items {
   color: var(--light)
 }
 #about {
   /* display: inline-block; */
 }
-#resumeimg {
-  
+
+.box {
+  margin: 1rem;
+  position: relative;
+}
+
+.img-container {
+  /*  Important  */
+  position: relative;
+}
+.overlay {
+  height: 100%;
+  width: 100%;
+  background: rgba(0,0,0,0.0);
+  position: absolute;
+  top: 0;
+}
+
+.project-name {
+  color: red;
+  text-align:center;
+  text-shadow: 2px 2px 5px rgb(88, 88, 88);
+  font-size: 30px;
+}
+
+.proj-image {
+  display: flex;
+  justify-content: center;
+}
+
+.center {
+  justify-content: center;
+}
+
+.desc {
+  color: var(--light);
+  margin-top: 15px;
 }

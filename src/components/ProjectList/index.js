@@ -10,8 +10,9 @@ const ProjectList = ({ category }) => {
       name: 'Budget Tracker',
       category: 'projects',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
-    },
+        'The Budget Tracker app is built to allow a user to track income and spending. It is a "PWA" application which allows the app to be used while there is no access to the internet.',
+      link: 'https://warm-sierra-26477.herokuapp.com/'
+      },
     {
       name: 'Employee Tracker',
       category: 'projects',
@@ -55,9 +56,11 @@ const ProjectList = ({ category }) => {
       {isModalOpen && (
         <Modal onClose={toggleModal} currentPhoto={currentPhoto} />
       )}
-      <div className="flex-row">
+      
+      <div className="flex-row center">
         {currentPhotos.map((image, i) => (
           <div>
+            <p className="project-name col-sm">{image.name}</p>
           <img
             src={require(`../../assets/small/projects/${i}.jpg`).default}
             alt={image.name}
@@ -65,11 +68,12 @@ const ProjectList = ({ category }) => {
             onClick={() => toggleModal(image, i)}
             id={i}
           />
-          <div> </div>
+          
           </div>
         ))}
       </div>
     </div>
+    
   );
 };
 

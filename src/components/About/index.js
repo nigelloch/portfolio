@@ -7,7 +7,7 @@ function About() {
   return (
     <section className="my-5 about-container"  >
     <div >
-      <h1 id="about">Who is Nigel?</h1>
+      <h1 id="about"></h1>
       <img src={coverImage} id= "myprofileimage" className="my-2" style={{ height: "auto", width: "65%" }} alt="cover" />
     </div>
       <div id="about-text" className="my-2">
@@ -21,7 +21,10 @@ function About() {
          </p>
 
       </div>
+      
     </section>
+
+    
   )
 }
 
