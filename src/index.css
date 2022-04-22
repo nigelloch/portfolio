@@ -102,17 +102,7 @@ header a {
   color: var(--light);
 }
 
-button {
-  font-size: 1rem;
-  text-decoration: none;
-  padding: 0.25rem 1rem;
-  border-radius: .5rem;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  margin: 0 1px;
-  background-color: var(--secondary);
-}
+
 
 button:hover {
   opacity: .8;
@@ -270,7 +260,7 @@ textarea {
 	border-radius: 5px;
 	max-width: 100%;
 	margin: 50px auto;
-	padding: 15px;
+	padding: 25px;
 	width: 660px;
 }
 
@@ -291,6 +281,17 @@ button {
 	font-weight: 600;
 	margin-bottom: 30px;
 	padding: 10px 25px;	
+}
+
+.mbutton {
+  float:right;
+  left: 10px;
+}
+
+.linksBtn {
+  display: inline-flex;
+  width: 100%;
+  justify-content: space-between;
 }
 
 a {
@@ -340,6 +341,10 @@ a {
   top: 0;
 }
 
+.projects {
+  margin-left: 5%;
+  margin-right: 5%;
+}
 .project-name {
   color: red;
   text-align:center;
@@ -350,6 +355,8 @@ a {
 .proj-image {
   display: flex;
   justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .center {
@@ -360,3 +367,15 @@ a {
   color: var(--light);
   margin-top: 15px;
 }
+
+/* button {
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 0.25rem 1rem;
+  border-radius: .5rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin: 0 1px;
+  background-color: var(--secondary);
+} */

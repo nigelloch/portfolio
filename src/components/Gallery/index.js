@@ -9,7 +9,7 @@ function Gallery() {
       name: 'projects', description: 'A collection of my work' }
   ]);
   return (
-    <div>
+    <div className='projects'>
     {categories.map((category) => {
         return( <section>
 
