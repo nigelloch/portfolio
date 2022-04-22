@@ -11,7 +11,7 @@ const ProjectList = ({ category }) => {
       category: 'projects',
       description:
         'The Budget Tracker app is built to allow a user to track income and spending. It is a "PWA" application which allows the app to be used while there is no access to the internet.',
-      link: 'https://loch-budget-tracker.herokuapp.com/',
+      link: 'https://budget-tracker-nl.herokuapp.com/',
       ghlink: 'https://github.com/nigelloch/budget-tracker'
       },
     {
@@ -27,7 +27,7 @@ const ProjectList = ({ category }) => {
       category: 'projects',
       description:
         'Note Taker is a an app built to allow users to create, save and maintain their notes.',
-        link: 'https://loch-note-taker.herokuapp.com/',
+        link: 'https://note-taker-nl.herokuapp.com/',
         ghlink: 'https://github.com/nigelloch/note-taker'
     },
     {
