@@ -368,6 +368,27 @@ a {
   margin-top: 15px;
 }
 
+.icons {
+  
+}
+.mail-icon {
+  cursor: pointer;
+  width: 40px;
+  justify-content: space-between;
+
+  margin-right: 20px;
+}
+
+.nav-icon {
+  cursor: pointer;
+  width: 25px;
+  justify-content: space-between;
+
+  margin-right: 20px;
+}
+
+
+
 /* button {
   font-size: 1rem;
   text-decoration: none;

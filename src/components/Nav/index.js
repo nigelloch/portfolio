@@ -1,8 +1,6 @@
 import React from "react";
 import { capitalizeFirstLetter } from "../../utils/helpers";
 
-
-
 function Nav(props) {
   const {
 
@@ -51,9 +49,27 @@ function Nav(props) {
             </span>
           </li>
 
-          <li 
         </ul>
+
       </nav>
+      <ul className="flex-row">
+          <a href="mailto:nigelloch@gmail.com?subject=Hello there!"target="_blank">
+            <img className="mail-icon" src={require(`../../assets/icons/mail.png`).default}
+             alt="mail icon"></img>
+          </a>
+          <a href="https://dribbble.com/NigelLoch"target="_blank">
+            <img className="nav-icon" src={require(`../../assets/icons/dribbble.png`).default}
+             alt="dribbble logo"></img>
+          </a>
+          <a href="https://www.linkedin.com/in/nigel-loch-ba212257/"target="_blank">
+            <img className="nav-icon" src={require(`../../assets/icons/linkedin.png`).default}
+             alt="linkedin logo"></img>
+          </a>
+          <a href="https://github.com/nigelloch"target="_blank">
+            <img className="nav-icon" src={require(`../../assets/icons/github.png`).default}
+             alt="github logo"></img>
+          </a>
+          </ul>
     </header>
   );
 }
