@@ -8,7 +8,7 @@ import ProjectList from './components/ProjectList';
 
 function App() {
  
-  const [pages] =  useState([<About/>,<Gallery/>,<Resume/>,<ContactForm/>])
+  const [pages] =  useState([<About/>,<Gallery/>,<Resume/>])
   const [currentPage, setCurrentPage] = useState(pages[0])
 
 

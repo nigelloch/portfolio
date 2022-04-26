@@ -39,17 +39,19 @@ function Nav(props) {
             </span>
           </li>
 
+          {/* <li id="nav-items"className={`mx-2 ${currentPage === pages[2] && 'navActive'}`}>
+            <span onClick={() => setCurrentPage(pages[2])}>
+            Contact
+            </span>
+          </li> */}
+
           <li id="nav-items"className={`mx-2 ${currentPage === pages[2] && 'navActive'}`}>
             <span onClick={() => setCurrentPage(pages[2])}>
               Resume
             </span>
           </li>
 
-          <li id="nav-items"className={`mx-2 ${currentPage === pages[3] && 'navActive'}`}>
-            <span onClick={() => setCurrentPage(pages[3])}>
-              Contact
-            </span>
-          </li>
+          <li 
         </ul>
       </nav>
     </header>
