@@ -168,6 +168,8 @@ textarea {
 .flex-row {
   display: flex;
   flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
 }
 
 .space-between {
@@ -369,7 +371,11 @@ a {
 }
 
 .icons {
-  
+  position: relative;
+  float:right;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 .mail-icon {
   cursor: pointer;
@@ -383,7 +389,7 @@ a {
   cursor: pointer;
   width: 25px;
   justify-content: space-between;
-
+  
   margin-right: 20px;
 }
 
