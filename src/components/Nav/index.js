@@ -17,7 +17,7 @@ function Nav(props) {
 
   return (
     <header className="flex-row px-1">
-      <div>
+  
       <h2>
         <a data-testid="link" href="/">
           <span role="img" aria-label="camera"> </span> Nigel Loch
@@ -53,7 +53,7 @@ function Nav(props) {
         </ul>
 
       </nav>
-      </div>
+
       <ul className="icons">
           <a href="mailto:nigelloch@gmail.com?subject=Hello there!"target="_blank">
             <img className="mail-icon" src={require(`../../assets/icons/mail.png`).default}
