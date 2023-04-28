@@ -143,9 +143,11 @@ li {
   list-style: none;
 }
 
-nav a:hover {
+nav span:hover {
   text-decoration: none;
 }
+
+
 
 nav  li {
   cursor: pointer;
@@ -168,7 +170,7 @@ textarea {
 .flex-row {
   display: flex;
   flex-wrap: wrap;
-  display: flex;
+
   justify-content: space-between;
 }
 
@@ -245,6 +247,12 @@ textarea {
 .img-thumbnail:hover {
   transform: scale(1.2);
 }
+
+li:hover {
+  text-decoration: underline;
+}
+
+
 
 .modalBackdrop {
 	background: rgba(0, 0, 0, .65);

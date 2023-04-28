@@ -5,6 +5,7 @@ import Gallery from './components/Gallery';
 import ContactForm from './components/Contact';
 import Resume from './components/Resume';
 import ProjectList from './components/ProjectList';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
  
