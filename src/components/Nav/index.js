@@ -20,7 +20,7 @@ function Navigation(props) {
         <span role="img" aria-label="camera"> </span> Nigel Loch
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
-      <Navbar.Collapse id="basic-navbar-nav">
+      <Navbar.Collapse id="basic-navbar-nav" >
         <Nav >
           <Nav.Link onClick={() => setCurrentPage(pages[0])} className={`mx-3 ${currentPage === pages[0] && 'navActive'}`}>About Me</Nav.Link>
           <Nav.Link onClick={() => setCurrentPage(pages[1])} className={`mx-3 ${currentPage === pages[1] && 'navActive'}`}>Projects</Nav.Link>
