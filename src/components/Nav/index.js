@@ -20,15 +20,14 @@ function Navigation(props) {
         <span role="img" aria-label="camera"> </span> Nigel Loch
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
-      <Navbar.Collapse id="basic-navbar-nav" className={"ml-auto justfiy-content-center flex-row"}>
+      <Navbar.Collapse id="basic-navbar-nav">
         <Nav >
           <Nav.Link onClick={() => setCurrentPage(pages[0])} className={`mx-3 ${currentPage === pages[0] && 'navActive'}`}>About Me</Nav.Link>
           <Nav.Link onClick={() => setCurrentPage(pages[1])} className={`mx-3 ${currentPage === pages[1] && 'navActive'}`}>Projects</Nav.Link>
           <Nav.Link onClick={() => setCurrentPage(pages[2])} className={`mx-3 ${currentPage === pages[2] && 'navActive'}`}>Resume</Nav.Link>
         </Nav>
-      </Navbar.Collapse>
-      <Navbar.Collapse className="ml-auto">
-        <Nav class="flex-row">
+
+        <Nav class="float-right flex-row">
           <Nav.Link href="mailto:nigelloch@gmail.com?subject=Hello there!" target="_blank">
             <img className="nav-icon" src={require(`../../assets/icons/mail.png`).default} alt="mail icon"></img>
           </Nav.Link>
